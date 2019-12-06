@@ -12,7 +12,7 @@ by means of a .zip file or from a Git repo. To access this page,
 the user should choose the "Homework Library" button from the 
 left sidebar of the Submitty homepage. 
 
-![](/images/library_manager_submitty_homepage)
+![](/images/library_manager_submitty_homepage.png)
 
 _NOTE: This is a feature reserved for users with admin priveleges._
 
@@ -41,7 +41,7 @@ pull the repo and any gradeables within to the library.
 
 ### Existing Source Management
 
-![](/images/library_manager_viewall)
+![](/images/library_manager_viewall.png)
 
 The "View All" tab is for managing previously uploaded gradeables, 
 and is selected by default when the library manager is opened. From
