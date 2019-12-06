@@ -7,48 +7,50 @@ category: Instructor
 
 ### Manage Your Homework Library
 
-In the library management page, you can upload new gradeables 
-by multiple means, such as in one large .zip file, by a file 
-path, or from a Git repo. 
+In the library management page, new gradeables can be uploaded 
+by means of a .zip file or from a Git repo. To access this page, 
+the user should choose the "Homework Library" button from the 
+left sidebar of the Submitty homepage. 
 
-To access this page, the user should choose "Homework Library" 
-from the left sidebar, and then select the "Manage Libraries" 
-button at the top right of the Homework Library page. 
+![](/images/library_manager_submitty_homepage)
 
 _NOTE: This is a feature reserved for users with admin priveleges._
 
 ### Uploading Gradeables
 
-There are three ways of uploading new gradeables in the homework 
-library manager: by .zip file, by file path, or by Git repo.
+There are two ways of uploading new gradeables in the homework 
+library manager: by .zip file or by Git repo.
 
-**_Upload by Zip File_** To upload a gradeable through a zipped 
-file, the "Upload" tab should first be selected. This tab is 
-selected by default when the Library Manager page is first opened. 
+**_Upload by Zip File:_** To upload a gradeable through a zipped 
+file, the "Upload" tab should first be selected.  
     
 When uploading using a .zip file, the gradeable should be inside 
-of a folder,and that folder should be located in the root directory 
-of the zipped file. You can include multiple gradeables inside one 
+of a folder, and that folder should be located in the root directory 
+of the zipped file. The uploader identifies the details of a gradeable 
+by means of a config json. An example file structure can be seen on
+the upload page. Multiple gradeables can be included inside one 
 upload, as long as it doesn't exceed the maximum upload size of 
-10MB. An example of the upload page can be seen in the image above.
+10MB.
 
-**_Upload by File Path:_** When the instructor selects the "File 
-Path" tab, there will be a text box where a file path to a location 
-on the server can be entered. Hitting "Submit" will add any 
-gradeables stored at this file path to the library.
-
-**_Upload by Git Repository:_** When the instructor selects the 
-"Git" tab, there will be a text box where a Git repo URL can be 
-entered. Hitting "Submit" will add any gradeables kept in the 
-specified git repo.
+**_Upload by Git Repository:_** When the "Git" tab is selected, 
+there will be a text box where a Git repo URL can be specified, 
+as well as a field for specifying what you would like the source 
+to be named. Leaving this name field blank will cause the source 
+to have the same name as the Git repo. Hitting "Submit" will then 
+pull the repo and any gradeables within to the library.
 
 ### Existing Source Management
 
-![](/images/library_manager_viewall.png)
+![](/images/library_manager_viewall)
 
-The last tab, "View All", is for managing previously uploaded 
-gradeables. You can choose to search the list, delete gradeables, 
-or, in the case of gradeables uploaded by file path or Git URL, 
-refresh gradeables. By choosing to refresh a gradeable, the file 
-path or Git repo will be checked for changes, and the exiting 
-gradeables will be replaced with the more current ones.
+The "View All" tab is for managing previously uploaded gradeables, 
+and is selected by default when the library manager is opened. From
+here, a list of previously uploaded sources can be seen, along with
+the option to refresh or delete each source. The View All page as well
+as an example source can be seen in the image above.
+
+Choosing "Delete" will remove the source from the library. Choosing 
+"Refresh" for a source uploaded from a Git repo will pull any changes 
+from the repo that was originally used to add the source. Note that the
+Refresh button will not work for sources uploaded by means of a .zip 
+file, and will generate an error.
